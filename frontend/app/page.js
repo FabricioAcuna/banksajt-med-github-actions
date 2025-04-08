@@ -9,7 +9,7 @@ export default function Home() {
         <nav className="flex justify-center items-center h-full">
           <ul className="flex justify-center gap-6 text-black">
             <Link href={"/"}>
-              <li>Hem</li>
+              <li>Hem, hej</li>
             </Link>
             <Link href={"/sessions"}>
               <li>Logga in</li>
