@@ -6,16 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "jest --watch",
+    "test:ci": "jest --ci",
     "lint": "next lint",
     "transfer": "wsl rsync -avz -e \"ssh -i ~/AWS.pem\" --exclude=node_modules ../banksajt ubuntu@ec2-44-211-155-226.compute-1.amazonaws.com:/home/ubuntu"
   },
   "dependencies": {
+    "next": "15.2.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2"
   }
 }
